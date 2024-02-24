@@ -16,15 +16,16 @@ Common run
 
 Show all students
 ```bash
-./sqlite_test SELECT * FROM students;
+./sqlite_runner "SELECT * FROM students;"
 ```
 
 Create table students
 ```bash
-./sqlite_test "CREATE TABLE students(name TEXT, age INT, best_lesson TEXT);"
+./sqlite_runner "CREATE TABLE students(name TEXT, age INT, best_lesson TEXT);"
 ```
 
 Insert row into table students
 ```bash
-./sqlite_test "INSERT INTO students VALUES('ILLIA', 15, 'Math');"
+./sqlite_runner "INSERT INTO students VALUES('ILLIA', 15, 'Math');"
+./sqlite_runner "INSERT INTO students VALUES('IVAN', 16, 'English');"
 ```
